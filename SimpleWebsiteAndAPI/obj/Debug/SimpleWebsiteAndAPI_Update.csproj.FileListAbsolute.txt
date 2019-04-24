@@ -1,0 +1,78 @@
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\SimpleWebsiteAndAPI.dll.config
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\SimpleWebsiteAndAPI.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\SimpleWebsiteAndAPI.pdb
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\csc.exe
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\csc.exe.config
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\csc.rsp
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\csi.exe
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\csi.rsp
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\System.AppContext.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\vbc.exe
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\vbc.exe.config
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\vbc.rsp
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\Newtonsoft.Json.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\Newtonsoft.Json.pdb
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\Newtonsoft.Json.xml
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\obj\Debug\SimpleWebsiteAndAPI_Update.csprojAssemblyReference.cache
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\obj\Debug\SimpleWebsiteAndAPI_Update.csproj.CoreCompileInputs.cache
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\obj\Debug\SimpleWebsiteAndAPI_Update.csproj.CopyComplete
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\obj\Debug\SimpleWebsiteAndAPI.dll
+C:\Users\stahrm\Desktop\SimpleWebsiteAndAPI\SimpleWebsiteAndAPI\obj\Debug\SimpleWebsiteAndAPI.pdb
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\SimpleWebsiteAndAPI.dll.config
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\SimpleWebsiteAndAPI.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\SimpleWebsiteAndAPI.pdb
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\csc.exe
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\csc.exe.config
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\csc.rsp
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\csi.exe
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\csi.rsp
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\System.AppContext.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\vbc.exe
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\vbc.exe.config
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\vbc.rsp
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\Newtonsoft.Json.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\Newtonsoft.Json.pdb
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\Newtonsoft.Json.xml
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\obj\Debug\SimpleWebsiteAndAPI_Update.csprojAssemblyReference.cache
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\obj\Debug\SimpleWebsiteAndAPI_Update.csproj.CoreCompileInputs.cache
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\obj\Debug\SimpleWebsiteAndAPI_Update.csproj.CopyComplete
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\obj\Debug\SimpleWebsiteAndAPI.dll
+C:\Users\Keith Laptop\Downloads\SimpleWebsiteAndAPI_Update\SimpleWebsiteAndAPI\obj\Debug\SimpleWebsiteAndAPI.pdb
