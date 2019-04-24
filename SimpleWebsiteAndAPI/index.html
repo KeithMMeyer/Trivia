@@ -16,6 +16,10 @@
     </div>
 
     <script>
+        //service("", "{}", function (response) { }, function (response) { });
+
+        var selectedVendor = 0;
+
         $("#btnLoadVendors").click(function () {
             var d = "<table class='table table-striped table-bordered' style='max-width:700px;'>";
             service("getVendorList", "{}",
@@ -26,7 +30,7 @@
                             "<td>" + value.VendorPhone + "</td>" +
                             "<td>" + value.VendorCity + "</td>" +
                             "<td>" + value.VendorState + "</td>" +
-                            "<td><img src='images/vendor.png' onclick='showDetails(" + value.VendorID + ");'/></td>" +
+                            "<td><img src='images/vendor.png' onclick='showInvoices(" + value.VendorID + ");'/></td>" +
                             "</tr>";
                     });
                     $("#vendorList").html(d + "</table>");
@@ -36,9 +40,42 @@
                 });
         });
 
-        function showDetails(id) {
-            alert("You selected id: " + id);
+        function showInvoices(id) {
+            selectedVendor = id;
+            service("getVendorDetails", "{vid:" + id + "}",
+                function (response) {
+                    var vendor = response[0];
+                    var invoices = vendor.Invoices;
+                    var d = "<h1>" + vendor.VendorContact + "</h1>" +
+                        "<table class='table table-striped table-bordered'>" +
+                        "<tr><th>Invoice Number</th><th>Invoice Date</th><th>Payment Total</th><th>Balance</th><th>Save</th></tr>";
+                    for (var i = 0; i < invoices.length; i++) {
+                        d += "<tr>" +
+                            "<td>" + invoices[i].InvoiceNumber + "</td>" +
+                            "<td>" + invoices[i].InvoiceDate + "</td>" +
+                            "<td><input type='text' id='txt" + invoices[i].InvoiceID + "' value='" + invoices[i].PaymentTotal + "' /></td>" +
+                            "<td>" + invoices[i].Balance + "</td>" +
+                            "<td><span class='btn btn-success btn-sm' onclick='updateInvoicePT(" + invoices[i].InvoiceID + ");'>save</span></td>" +
+                            "</tr>";
+                    }
+
+                    $("#vendorDetails").html(d + "</table>");
+                }, function (response) {
+                    alert("Error. Check log");
+                    console.log(response);
+                });
         }
+
+        function updateInvoicePT(iid) {
+            service("updateInvoicePaymentTotal", "{invoiceId:" + iid + ", paymentTotal:" + $("#txt" + iid).val() + "}",
+                function (response) {
+                    showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+
     </script>
 </body>
 </html>

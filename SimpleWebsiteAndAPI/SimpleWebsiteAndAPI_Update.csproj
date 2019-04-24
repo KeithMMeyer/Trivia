@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Trivia</RootNamespace>
-    <AssemblyName>Trivia</AssemblyName>
+    <RootNamespace>SimpleWebsiteAndAPI</RootNamespace>
+    <AssemblyName>SimpleWebsiteAndAPI</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="api.asmx" />
+    <Content Include="DB_Script.sql" />
     <Content Include="includes\head.html" />
     <Content Include="index.html" />
     <Content Include="Web.config">

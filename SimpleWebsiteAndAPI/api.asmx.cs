@@ -473,6 +473,13 @@ namespace WebAPI {
             send("spGetVendorDetails", serializeStyle.JSON_RETURN);
         }
 
+        [WebMethod(Description = "Updates an invoice payment total")]
+        public void updateInvoicePaymentTotal(int invoiceId, float paymentTotal) {
+            addParam("@invoiceId", invoiceId);
+            addParam("@paymentTotal", paymentTotal);
+            sqlExec("spUpdateInvoicePaymentTotal");
+        }
+
 		#endregion
 
 	}
