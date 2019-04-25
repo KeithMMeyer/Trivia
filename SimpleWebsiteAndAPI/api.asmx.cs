@@ -454,92 +454,116 @@ namespace WebAPI {
 
 		}
 
-		#endregion
-		// ========================================================================================
-		//					END - DO NOT CHANGE
-		// ========================================================================================
+        #endregion
+        // ========================================================================================
+        //					END - DO NOT CHANGE
+        // ========================================================================================
 
-		// Methods
-		#region ######################################################################################################################################################## Methods
-		
-        [WebMethod]
-        public void getVendorList() {
-            send("spGetVendorList", serializeStyle.DATA_TABLE);
-        }
+        // Methods
+        #region ######################################################################################################################################################## Methods
 
         [WebMethod]
-        public void getVendorDetails(int vid) {
-            addParam("@VendorID", vid);
-            send("spGetVendorDetails", serializeStyle.JSON_RETURN);
-        }
-
-        [WebMethod(Description = "Updates an invoice payment total")]
-        public void updateInvoicePaymentTotal(int invoiceId, float paymentTotal) {
-            addParam("@invoiceId", invoiceId);
-            addParam("@paymentTotal", paymentTotal);
-            sqlExec("spUpdateInvoicePaymentTotal");
-        }
-
-        [WebMethod(Description = "Creates a new user.")]
-        public void createUser(string userName, string firstName, string lastName, Boolean student)
+        public void getFacts(decimal longitude, decimal latitude, string date, int page, int amount)
         {
-            addParam("@UserName", userName);
-            addParam("@FirstName", firstName);
-            addParam("@LastName", lastName);
-            addParam("@MiamiStudent", student);
-            sqlExec("spCreateUser");
+            addParam("@date", date);
+            addParam("@longitude", longitude);
+            addParam("@latitude", latitude);
+            addParam("@page", page);
+            addParam("@amount", amount);
+            send("spGetFacts", serializeStyle.DATA_TABLE);
         }
 
-        [WebMethod(Description = "Gets information about a user.")]
-        public void getUser(string userName)
+        [WebMethod]
+        public void getFactsByUser(int page, int amount, string username)
         {
-            addParam("@UserName", userName);
-            send("spGetUser", serializeStyle.JSON_RETURN);
+            addParam("@page", page);
+            addParam("@amount", amount);
+            addParam("@username", username);
+            send("spGetFactsByUser", serializeStyle.DATA_TABLE);
         }
 
-        [WebMethod(Description = "Sets a user's preferences.")]
-        public void setPref(string userName, string favorite, string leastFavorite)
+        [WebMethod]
+        public void getSeen(int amount, int page, string username)
         {
-            addParam("@userName", userName);
-            addParam("@favoriteType", favorite);
-            addParam("@leastFavorite", leastFavorite);
-            sqlExec("spSetUserPreference");
+            addParam("@amount", amount);
+            addParam("@page", page);
+            addParam("@username", username);
+            send("spGetSeen", serializeStyle.DATA_TABLE);
         }
 
-        [WebMethod(Description = "Gets a user's preferences.")]
-        public void getPref(string userName)
+        [WebMethod]
+        public void setSeen(int factId, string username)
         {
-            addParam("@UserName", userName);
-            send("spGetUserPreference", serializeStyle.JSON_RETURN);
+            addParam("@FactId", factId);
+            addParam("@Username", username);
+            sqlExec("spSetSeen");
         }
 
-        [WebMethod(Description = "Creates a new fact, or modifies an existing one.")]
-        public void setFact(int id, string type, string content, decimal longitude, decimal latitude, string date)
-        {
-            addParam("@FactId", id);
-            addParam("@Type", type);
-            addParam("@Content", content);
-            addParam("@Longitude", longitude);
-            addParam("@Latitude", latitude);
-            addParam("@Date", date);
-            sqlExec("spSetFact");
-        }
-
-
-        [WebMethod(Description = "Gets all completed quizzes.")]
-        public void getCompleted(string userName)
-        {
-            addParam("@UserName", userName);
-            send("spGetCompleted", serializeStyle.DATA_TABLE);
-        }
-
-        [WebMethod(Description = "Sets an existing quiz as completed.")]
-        public void setCompleted(string userName, string quizName, int score)
+        [WebMethod]
+        public void getQuiz(string quizName)
         {
             addParam("@quizName", quizName);
-            addParam("@username", userName);
+            send("spGetQuiz", serializeStyle.DATA_TABLE);
+        }
+
+        [WebMethod]
+        public void getQuestion(int questionId)
+        {
+            addParam("@questionId", questionId);
+            send("spGetQuestion", serializeStyle.DATA_TABLE);
+        }
+
+        [WebMethod(Description = "Creates a new Quiz.")]
+        public void createQuiz(string QuizName, string Date, int NumberOfQuestions)
+        {
+            addParam("@QuizName", QuizName);
+            addParam("@Date", Date);
+            addParam("@NumberOfQuestions", NumberOfQuestions);
+            sqlExec("spCreateQuiz");
+        }
+
+        [WebMethod(Description = "Update the Quiz Score.")]
+        public void updateQuizScore(string quizName, string userName, int score)
+        {
+            addParam("@quizName", quizName);
+            addParam("@UserName", userName);
             addParam("@score", score);
-            sqlExec("spSetCompleted");
+            sqlExec("spUpdateQuizScore");
+        }
+
+
+        [WebMethod(Description = "Creates a new Question.")]
+        public void createQuestion(int questionId, string quizName, string content, string correct, string incorrectOne, string incorrectTwo,
+            string incorrectThree)
+        {
+
+            addParam("@questionId", questionId);
+            addParam("@quizName", quizName);
+            addParam("@content", content);
+            addParam("@correct", correct);
+            addParam("@incorrectOne", incorrectOne);
+            addParam("@incorrectTwo", incorrectTwo);
+            addParam("@incorrectThree", incorrectThree);
+            sqlExec("spCreateQuestion");
+
+
+        }
+
+        [WebMethod(Description = "Update the Question.")]
+        public void updateQuestion(int questionId, string quizName, string content, string correct, string incorrectOne, string incorrectTwo,
+            string incorrectThree)
+        {
+
+            addParam("@questionId", questionId);
+            addParam("@quizName", quizName);
+            addParam("@content", content);
+            addParam("@correct", correct);
+            addParam("@incorrectOne", incorrectOne);
+            addParam("@incorrectTwo", incorrectTwo);
+            addParam("@incorrectThree", incorrectThree);
+            sqlExec("spUpdateQuestion");
+
+
         }
 
         #endregion
