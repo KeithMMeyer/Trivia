@@ -462,6 +462,68 @@ namespace WebAPI {
         // Methods
         #region ######################################################################################################################################################## Methods
 
+		        [WebMethod(Description = "Creates a new user.")]
+        public void createUser(string userName, string firstName, string lastName, Boolean student)
+        {
+            addParam("@UserName", userName);
+            addParam("@FirstName", firstName);
+            addParam("@LastName", lastName);
+            addParam("@MiamiStudent", student);
+            sqlExec("spCreateUser");
+        }
+
+        [WebMethod(Description = "Gets information about a user.")]
+        public void getUser(string userName)
+        {
+            addParam("@UserName", userName);
+            send("spGetUser", serializeStyle.JSON_RETURN);
+        }
+
+        [WebMethod(Description = "Sets a user's preferences.")]
+        public void setPref(string userName, string favorite, string leastFavorite)
+        {
+            addParam("@userName", userName);
+            addParam("@favoriteType", favorite);
+            addParam("@leastFavorite", leastFavorite);
+            sqlExec("spSetUserPreference");
+        }
+
+        [WebMethod(Description = "Gets a user's preferences.")]
+        public void getPref(string userName)
+        {
+            addParam("@UserName", userName);
+            send("spGetUserPreference", serializeStyle.JSON_RETURN);
+        }
+
+        [WebMethod(Description = "Creates a new fact, or modifies an existing one.")]
+        public void setFact(int id, string type, string content, decimal longitude, decimal latitude, string date)
+        {
+            addParam("@FactId", id);
+            addParam("@Type", type);
+            addParam("@Content", content);
+            addParam("@Longitude", longitude);
+            addParam("@Latitude", latitude);
+            addParam("@Date", date);
+            sqlExec("spSetFact");
+        }
+
+
+        [WebMethod(Description = "Gets all completed quizzes.")]
+        public void getCompleted(string userName)
+        {
+            addParam("@UserName", userName);
+            send("spGetCompleted", serializeStyle.DATA_TABLE);
+        }
+
+        [WebMethod(Description = "Sets an existing quiz as completed.")]
+        public void setCompleted(string userName, string quizName, int score)
+        {
+            addParam("@quizName", quizName);
+            addParam("@username", userName);
+            addParam("@score", score);
+            sqlExec("spSetCompleted");
+        }
+
         [WebMethod]
         public void getFacts(decimal longitude, decimal latitude, string date, int page, int amount)
         {
