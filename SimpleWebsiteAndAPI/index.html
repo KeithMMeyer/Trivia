@@ -76,8 +76,8 @@
                 });
         }
 
-        function createUser() {
-            service("createUser", "{userName:\"" + "Smithinator" + "\", firstName:\"" + "Roy" + "\", lastName:\"" + "Smith" + "\", student:" + false + "}",
+        function createUser(username, firstname, lastname, student) {
+            service("createUser", "{userName:\"" + username + "\", firstName:\"" + firstname + "\", lastName:\"" + lastname + "\", student:" + student + "}",
                 function (response) {
                     //showInvoices(selectedVendor);
                 }, function (response) {
@@ -86,8 +86,8 @@
                 });
         }
 
-        function getUser() {
-            service("getUser", "{userName:\"" + "Smithinator" +  "\"}",
+        function getUser(username) {
+            service("getUser", "{userName:\"" + username +  "\"}",
                 function (response) {
                     alert(response)
                     //showInvoices(selectedVendor);
@@ -97,8 +97,8 @@
                 });
         }
 
-        function setPreferences() {
-            service("setPref", "{userName:\"" + "Smithinator" + "\", favorite:\"" + "History" + "\", leastFavorite:\"" + "Sports" + "\"}",
+        function setPreferences(username, favorite, leastFavorite) {
+            service("setPref", "{userName:\"" + username + "\", favorite:\"" + favorite + "\", leastFavorite:\"" + leastFavorite + "\"}",
                 function (response) {
                     //showInvoices(selectedVendor);
                 }, function (response) {
@@ -107,8 +107,41 @@
                 });
         }
 
-        function getPreferences() {
-            service("getPref", "{userName:\"" + "Smithinator" + "\"}",
+        function getPreferences(username) {
+            service("getPref", "{userName:\"" + username + "\"}",
+                function (response) {
+                    alert(response)
+                    //showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+
+        function setFact(id, type, content, longitude, latitude, date) {
+            service("SetFact", "{id:" + id + ", type:\"" + type + "\", content:\"" + content + 
+                "\", longitude:" + longitude + ", latitude:" + latitude + ", date:\"" + date + "\"}",
+                function (response) {
+                    //showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+
+        function setCompletedQuizzes(username, quizname, score) {
+            service("setCompleted", "{userName:\"" + username + "\", quizName:\"" + quizname + "\", score:" + score + "}",
+                function (response) {
+                    alert(response)
+                    //showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+
+        function getCompletedQuizzes(username) {
+            service("getCompleted", "{userName:\"" + username + "\"}",
                 function (response) {
                     alert(response)
                     //showInvoices(selectedVendor);

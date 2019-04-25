@@ -513,7 +513,34 @@ namespace WebAPI {
             send("spGetUserPreference", serializeStyle.JSON_RETURN);
         }
 
+        [WebMethod(Description = "Creates a new fact, or modifies an existing one.")]
+        public void setFact(int id, string type, string content, decimal longitude, decimal latitude, string date)
+        {
+            addParam("@FactId", id);
+            addParam("@Type", type);
+            addParam("@Content", content);
+            addParam("@Longitude", longitude);
+            addParam("@Latitude", latitude);
+            addParam("@Date", date);
+            sqlExec("spSetFact");
+        }
 
+
+        [WebMethod(Description = "Gets all completed quizzes.")]
+        public void getCompleted(string userName)
+        {
+            addParam("@UserName", userName);
+            send("spGetCompleted", serializeStyle.DATA_TABLE);
+        }
+
+        [WebMethod(Description = "Sets an existing quiz as completed.")]
+        public void setCompleted(string userName, string quizName, int score)
+        {
+            addParam("@quizName", quizName);
+            addParam("@username", userName);
+            addParam("@score", score);
+            sqlExec("spSetCompleted");
+        }
 
         #endregion
 
