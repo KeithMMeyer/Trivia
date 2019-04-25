@@ -480,7 +480,42 @@ namespace WebAPI {
             sqlExec("spUpdateInvoicePaymentTotal");
         }
 
-		#endregion
+        [WebMethod(Description = "Creates a new user.")]
+        public void createUser(string userName, string firstName, string lastName, Boolean student)
+        {
+            addParam("@UserName", userName);
+            addParam("@FirstName", firstName);
+            addParam("@LastName", lastName);
+            addParam("@MiamiStudent", student);
+            sqlExec("spCreateUser");
+        }
 
-	}
+        [WebMethod(Description = "Gets information about a user.")]
+        public void getUser(string userName)
+        {
+            addParam("@UserName", userName);
+            send("spGetUser", serializeStyle.JSON_RETURN);
+        }
+
+        [WebMethod(Description = "Sets a user's preferences.")]
+        public void setPref(string userName, string favorite, string leastFavorite)
+        {
+            addParam("@userName", userName);
+            addParam("@favoriteType", favorite);
+            addParam("@leastFavorite", leastFavorite);
+            sqlExec("spSetUserPreference");
+        }
+
+        [WebMethod(Description = "Gets a user's preferences.")]
+        public void getPref(string userName)
+        {
+            addParam("@UserName", userName);
+            send("spGetUserPreference", serializeStyle.JSON_RETURN);
+        }
+
+
+
+        #endregion
+
+    }
 }

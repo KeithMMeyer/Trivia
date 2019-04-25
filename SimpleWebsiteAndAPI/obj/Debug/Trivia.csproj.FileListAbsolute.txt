@@ -1,6 +1,3 @@
-C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\bin\SimpleWebsiteAndAPI.dll.config
-C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\bin\SimpleWebsiteAndAPI.dll
-C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\bin\SimpleWebsiteAndAPI.pdb
 C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\bin\roslyn\csc.exe
 C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\bin\roslyn\csc.exe.config
 C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\bin\roslyn\csc.rsp
@@ -35,5 +32,8 @@ C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\bin\Microsoft.CodeDom
 C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\obj\Debug\Trivia.csprojAssemblyReference.cache
 C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\obj\Debug\Trivia.csproj.CoreCompileInputs.cache
 C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\obj\Debug\Trivia.csproj.CopyComplete
-C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\obj\Debug\SimpleWebsiteAndAPI.dll
-C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\obj\Debug\SimpleWebsiteAndAPI.pdb
+C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\bin\Trivia.dll.config
+C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\bin\Trivia.dll
+C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\bin\Trivia.pdb
+C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\obj\Debug\Trivia.dll
+C:\Users\Keith Laptop\Downloads\Trivia\SimpleWebsiteAndAPI\obj\Debug\Trivia.pdb

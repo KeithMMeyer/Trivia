@@ -76,6 +76,48 @@
                 });
         }
 
+        function createUser() {
+            service("createUser", "{userName:\"" + "Smithinator" + "\", firstName:\"" + "Roy" + "\", lastName:\"" + "Smith" + "\", student:" + false + "}",
+                function (response) {
+                    //showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+
+        function getUser() {
+            service("getUser", "{userName:\"" + "Smithinator" +  "\"}",
+                function (response) {
+                    alert(response)
+                    //showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+
+        function setPreferences() {
+            service("setPref", "{userName:\"" + "Smithinator" + "\", favorite:\"" + "History" + "\", leastFavorite:\"" + "Sports" + "\"}",
+                function (response) {
+                    //showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+
+        function getPreferences() {
+            service("getPref", "{userName:\"" + "Smithinator" + "\"}",
+                function (response) {
+                    alert(response)
+                    //showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+
     </script>
 </body>
 </html>
