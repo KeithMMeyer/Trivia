@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Triviapp</title>
+	<link rel="import" href="includes/head.html">
+</head>
+<body>
+
+    <div style="margin-left:32px; margin-top:32px;">
+        Longitude: <input type="text" id="getFactLongitude" />
+        Latitude: <input type="text" id="getFactLatitude" />
+        Date: <input type="text" id="getFactDate" />
+        Page: <input type="text" id="getFactPage" />
+        Amount: <input type="text" id="getFactAmount" />
+
+        <span id="btnLoadFacts" class="btn btn-primary">Get Facts</span>
+        <div>
+            <div id="factList" style="margin-top:16px;float:left;"></div>
+        </div>
+
+        Username: <input type="text" id="getSeenUsername" />
+        Page: <input type="text" id="getSeenPage" />
+        Amount: <input type="text" id="getSeenAmount" />
+        <span id="btnSeenFacts" class="btn btn-primary">Get Seen Facts</span>
+        <div>
+            <div id="seenFactList" style="margin-top:16px;float:left;"></div>
+        </div>
+
+        Username: <input type="text" id="getFactByUserUsername" />
+        Page: <input type="text" id="getFactByUserPage" />
+        Amount: <input type="text" id="getFactByUserAmount" />
+        <span id="btnGetFactByUser" class="btn btn-primary">Get Seen Facts By Username</span>
+        <div>
+            <div id="getFactByUserList" style="margin-top:16px;float:left;"></div>
+        </div>
+
+        Username: <input type="text" id="setSeenUsername" />
+        FactId: <input type="text" id="setSeenFactID" />
+        <span id="btnSetSeen" class="btn btn-primary">Set Seen Facts</span>
+        <div></div>
+
+        Quiz Name: <input type="text" id="getQuizName" />
+        <span id="btnGetQuiz" class="btn btn-primary">Get Quiz</span>
+        <div>
+            <div id="getQuizList" style="margin-top:16px;float:left;"></div>
+        </div>
+
+        Question ID: <input type="text" id="getQuestionID" />
+        <span id="btnGetQuestion" class="btn btn-primary">Get Question</span>
+        <div>
+            <div id="getQuestionList" style="margin-top:16px;float:left;"></div>
+        </div>
+
+        Quiz Name: <input type="text" id="createQuizName" />
+        Date: <input type="text" id="createQuizDate" />
+        Number of Questions: <input type="text" id="createQuizNumber" />
+        <span id="btnCreateQuiz" class="btn btn-primary">Create Quiz</span>
+        <div>
+        </div>
+
+        Quiz Name: <input type="text" id="updateQuizName" />
+        User Name: <input type="text" id="updateQuizUser" />
+        Score: <input type="text" id="updateQuizScore" />
+        <span id="btnUpdateQuizScore" class="btn btn-primary">Update Quiz Score</span>
+        <div>
+        </div>
+
+        Question ID: <input type="text" id="createQuestionID" />
+        Quiz Name: <input type="text" id="createQuestionQuiz" />
+        Content: <input type="text" id="createQuestionContent" />
+        Correct: <input type="text" id="createQuestionCorrect" />
+        IncorrectOne: <input type="text" id="createQuestionIncorrectOne" />
+        IncorrectTwo: <input type="text" id="createQuestionIncorrectTwo" />
+        IncorrectThree: <input type="text" id="createQuestionIncorrectThree" />
+
+        <span id="btnCreateQuestion" class="btn btn-primary">Create Question</span>
+        <div>
+        </div>
+
+        Question ID: <input type="text" id="updateQuestionID" />
+        Quiz Name: <input type="text" id="updateQuestionQuiz" />
+        Content: <input type="text" id="updateQuestionContent" />
+        Correct: <input type="text" id="updateQuestionCorrect" />
+        IncorrectOne: <input type="text" id="updateQuestionIncorrectOne" />
+        IncorrectTwo: <input type="text" id="updateQuestionIncorrectTwo" />
+        IncorrectThree: <input type="text" id="updateQuestionIncorrectThree" />
+
+        <span id="btnUpdateQuestion" class="btn btn-primary">Update Question</span>
+        <div>
+        </div>
+
+    </div>
+
+    <script>
+        //service("", "{}", function (response) { }, function (response) { });
+        function createUser(username, firstname, lastname, student) {
+            service("createUser", "{userName:\"" + username + "\", firstName:\"" + firstname + "\", lastName:\"" + lastname + "\", student:" + student + "}",
+                function (response) {
+                    //showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+        function getUser(username) {
+            service("getUser", "{userName:\"" + username +  "\"}",
+                function (response) {
+                    alert(response)
+                    //showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+        function setPreferences(username, favorite, leastFavorite) {
+            service("setPref", "{userName:\"" + username + "\", favorite:\"" + favorite + "\", leastFavorite:\"" + leastFavorite + "\"}",
+                function (response) {
+                    //showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+        function getPreferences(username) {
+            service("getPref", "{userName:\"" + username + "\"}",
+                function (response) {
+                    alert(response)
+                    //showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+        function setFact(id, type, content, longitude, latitude, date) {
+            service("SetFact", "{id:" + id + ", type:\"" + type + "\", content:\"" + content + 
+                "\", longitude:" + longitude + ", latitude:" + latitude + ", date:\"" + date + "\"}",
+                function (response) {
+                    //showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+        function setCompletedQuizzes(username, quizname, score) {
+            service("setCompleted", "{userName:\"" + username + "\", quizName:\"" + quizname + "\", score:" + score + "}",
+                function (response) {
+                    alert(response)
+                    //showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+        function getCompletedQuizzes(username) {
+            service("getCompleted", "{userName:\"" + username + "\"}",
+                function (response) {
+                    alert(response)
+                    //showInvoices(selectedVendor);
+                }, function (response) {
+                    alert("Error");
+                    console.log(response);
+                });
+        }
+
+
+        $("#btnLoadFacts").click(function () {
+            var longitude = parseFloat($("#getFactLongitude").val());
+            var latitude = parseFloat($("#getFactLatitude").val());
+            var date = $("#getFactDate").val();
+            var page = parseInt($("#getFactPage").val());
+            var amount = parseInt($("#getFactAmount").val());
+            var d = "<table class='table table-striped table-bordered' style='max-width:700px;'>";
+            service("getFacts", "{longitude:" + longitude + ", latitude:" + latitude + 
+                ", date:" + JSON.stringify(date) + ", page:" + page + ", amount:" + amount + "}",
+                function (response) {
+                    $.each(response, function (index, value) {
+                        d += "<tr>" +
+                            "<td>" + value.VisibleId + "</td>" +
+                            "<td>" + value.Type + "</td>" +
+                            "<td>" + value.Content + "</td>" +
+                            "<td>" + value.Longitude + "</td>" +
+                            "<td>" + value.Latitude + "</td>" +
+                            "<td>" + value.Date + "</td>" +
+                            "</tr>";
+                    });
+                    $("#factList").html(d + "</table>");
+                }, function (response) {
+                    alert("Error...");
+                    console.log(response);
+                });
+        });
+
+        $("#btnSeenFacts").click(function () {
+            var username = $("#getSeenUsername").val();
+            var page = parseInt($("#getSeenPage").val());
+            var amount = parseInt($("#getSeenAmount").val());
+            var d = "<table class='table table-striped table-bordered' style='max-width:700px;'>";
+            service("getSeen", "{amount:" + amount + ", page:" + page + ", username:" + JSON.stringify(username) + "}",
+                function (response) {
+                    $.each(response, function (index, value) {
+                        d += "<tr>" +
+                            "<td>" + value.UserID + "</td>" +
+                            "<td>" + value.Username + "</td>" +
+                            "<td>" + value.VisibleId + "</td>" +
+                            "<td>" + value.Type + "</td>" +
+                            "<td>" + value.Content + "</td>" +
+                            "<td>" + value.Longitude + "</td>" +
+                            "<td>" + value.Latitude + "</td>" +
+                            "<td>" + value.Date + "</td>" +
+                            "</tr>";
+                    });
+                    $("#seenFactList").html(d + "</table>");
+                }, function (response) {
+                    alert("Error...");
+                    console.log(response);
+                });
+        });
+
+        $("#btnGetFactByUser").click(function () {
+            var username = $("#getFactByUserUsername").val();
+            var page = parseInt($("#getFactByUserPage").val());
+            var amount = parseInt($("#getFactByUserAmount").val());
+            var d = "<table class='table table-striped table-bordered' style='max-width:700px;'>";
+            service("getFactsByUser", "{amount:" + amount + ", page:" + page + ", username:" + JSON.stringify(username) + "}",
+                function (response) {
+                    $.each(response, function (index, value) {
+                        d += "<tr>" +
+                            "<td>" + value.FactID + "</td>" +
+                            "<td>" + value.VisibleId + "</td>" +
+                            "<td>" + value.Type + "</td>" +
+                            "<td>" + value.Content + "</td>" +
+                            "<td>" + value.Longitude + "</td>" +
+                            "<td>" + value.Latitude + "</td>" +
+                            "<td>" + value.Date + "</td>" +
+                            "<td>" + value.UserID + "</td>" +
+                            "<td>" + value.FavoriteType + "</td>" +
+                            "<td>" + value.LeastFavoriteType + "</td>" +
+                            "</tr>";
+                    });
+                    $("#getFactByUserList").html(d + "</table>");
+                }, function (response) {
+                    alert("Error...");
+                    console.log(response);
+                });
+        });
+
+        $("#btnSetSeen").click(function () {
+            var username = $("#setSeenUsername").val();
+            var factId = parseInt($("#setSeenFactID").val())
+            service("setSeen", "{factId:" + factId + ", username:" + JSON.stringify(username) + "}",
+                function (response) {
+                    alert("Success");
+                    console.log(response);
+                },
+                function (response) {
+                    alert("Error...");
+                    console.log(response);
+                });
+        });
+
+        $("#btnGetQuiz").click(function () {
+            var quizname = $("#getQuizName").val();
+            var d = "<table class='table table-striped table-bordered' style='max-width:700px;'>";
+            service("getQuiz", "{quizName:" + JSON.stringify(quizname) + "}",
+                function (response) {
+                    $.each(response, function (index, value) {
+                        d += "<tr>" +
+                            "<td>" + value.Name + "</td>" +
+                            "<td>" + value.Date + "</td>" +
+                            "<td>" + value.NumberOfQuestions + "</td>" +
+                            "</tr>";
+                    });
+                    $("#getQuizList").html(d + "</table>");
+                }, function (response) {
+                    alert("Error...");
+                    console.log(response);
+                });
+        });
+
+        $("#btnGetQuestion").click(function () {
+            var questionId = parseInt($("#getQuestionID").val());
+            var d = "<table class='table table-striped table-bordered' style='max-width:700px;'>";
+            service("getQuestion", "{questionId:" + questionId + "}",
+                function (response) {
+                    $.each(response, function (index, value) {
+                        d += "<tr>" +
+                            "<td>" + value.VisibleId + "</td>" +
+                            "<td>" + value.QuizID + "</td>" +
+                            "<td>" + value.Content + "</td>" +
+                            "<td>" + value.CorrectAnswer + "</td>" +
+                            "<td>" + value.Incorrect1 + "</td>" +
+                            "<td>" + value.Incorrect2 + "</td>" +
+                            "<td>" + value.Incorrect3 + "</td>" +
+                            "</tr>";
+                    });
+                    $("#getQuestionList").html(d + "</table>");
+                }, function (response) {
+                    alert("Error...");
+                    console.log(response);
+                });
+        });
+
+        $("#btnCreateQuiz").click(function () {
+            var quizname = $("#createQuizName").val();
+            var date = $("#createQuizDate").val();
+            var number = parseInt($("#createQuizNumber").val())
+            service("createQuiz", "{NumberOfQuestions:" + number + ", Date:" + JSON.stringify(date) + ", QuizName:" + JSON.stringify(quizname) + "}",
+                function (response) {
+                    alert("Success");
+                    console.log(response);
+                },
+                function (response) {
+                    alert("Error...");
+                    console.log(response);
+                });
+        });
+
+        $("#btnUpdateQuizScore").click(function () {
+            var quizname = $("#updateQuizName").val();
+            var username = $("#updateQuizUser").val();
+            var score = parseInt($("#updateQuizScore").val());
+            service("updateQuizScore", "{score:" + score + ", userName:" + JSON.stringify(username) + ", quizName:" + JSON.stringify(quizname) + "}",
+                function (response) {
+                    alert("Success");
+                    console.log(response);
+                },
+                function (response) {
+                    alert("Error...");
+                    console.log(response);
+                });
+        });
+
+        $("#btnCreateQuestion").click(function () {
+            var quizname = $("#createQuestionQuiz").val();
+            var content = $("#createQuestionContent").val();
+            var id = parseInt($("#createQuestionID").val());
+            var correct = $("#createQuestionCorrect").val();
+            var incOne = $("#createQuestionIncorrectOne").val();
+            var incTwo = $("#createQuestionIncorrectTwo").val();
+            var incThree = $("#createQuestionIncorrectThree").val();
+
+            service("createQuestion", "{questionId:" + id + ", content:" + JSON.stringify(content) + ", quizName:" + JSON.stringify(quizname) + ", correct:" + JSON.stringify(correct) + ", incorrectOne:" + JSON.stringify(incOne) + ", incorrectTwo:" + JSON.stringify(incTwo) + ", incorrectThree:" + JSON.stringify(incThree) + "}",
+                function (response) {
+                    alert("Success");
+                    console.log(response);
+                },
+                function (response) {
+                    alert("Error...");
+                    console.log(response);
+                });
+        });
+
+        $("#btnUpdateQuestion").click(function () {
+            var quizname = $("#updateQuestionQuiz").val();
+            var content = $("#updateQuestionContent").val();
+            var id = parseInt($("#updateQuestionID").val());
+            var correct = $("#updateQuestionCorrect").val();
+            var incOne = $("#updateQuestionIncorrectOne").val();
+            var incTwo = $("#updateQuestionIncorrectTwo").val();
+            var incThree = $("#updateQuestionIncorrectThree").val();
+
+            service("updateQuestion", "{questionId:" + id + ", content:" + JSON.stringify(content) + ", quizName:" + JSON.stringify(quizname) + ", correct:" + JSON.stringify(correct) + ", incorrectOne:" + JSON.stringify(incOne) + ", incorrectTwo:" + JSON.stringify(incTwo) + ", incorrectThree:" + JSON.stringify(incThree) + "}",
+                function (response) {
+                    alert("Success");
+                    console.log(response);
+                },
+                function (response) {
+                    alert("Error...");
+                    console.log(response);
+                });
+        });
+    </script>
+</body>
+</html>
+
+
