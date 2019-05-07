@@ -525,6 +525,14 @@ namespace WebAPI {
         }
 
         [WebMethod]
+        public void getFullFacts(int amount, int page)
+        {
+            addParam("@page", page);
+            addParam("@amount", amount);
+            send("spGetFacts", serializeStyle.DATA_TABLE);
+        }
+
+        [WebMethod]
         public void getFacts(decimal longitude, decimal latitude, string date, int page, int amount)
         {
             addParam("@date", date);
