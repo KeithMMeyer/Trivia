@@ -1,0 +1,13 @@
+FactID	Type	Content	Longitude	Latitude	Date
+1	Sports	A professional basketball game is 48 minutes long, not including breaks, timeouts, fouls, etc.	1.2	3.2	04/16/2018
+2	Trivia	The original formula for Mountain Dew was invented in 1940	2.0	6.9	06/06/2018
+3	Trivia	Camels are called "The ship of the desert"	7.2	1.3	09/12/2018	
+4	History	The Great of Fire London started on Sunday, 2 September 1666 in a baker's shop	3.7	4.5	01/02/1998
+5	Video Games	Mario was named after the landlord of Nintendo's first warehoue Mr. Mario Segale	1.7	2.5	02/19/2019
+6	Video Games	3,333,360 points i the max score you can get in 'Pac-Man'	9.4	6.1	02/19/2018
+7	Video Games	Playstation 2 and Nintndo D are the best selling game consoles with about 155 million units each	5.5	5.5	04/02/2012
+8	Video Games	The highest number  human can press a controller button in a second is 16 times	6.1	6.3	10/09/2015
+9	History	The last time the US Constitution was amended was in 1992 with the Twenty-seventh Amendment	4.9	3.5	11/09/2018
+10	Trivia	Venus has the longest day of any planet in our solar system. One day is 243 Earth days. Its days last longer than its orbit around the sun (every 224.65 Eearth days)	2.2	4.5	09/29/2018
+11	Trivia	The scientific term for brain freeze is "sphenopalatine ganglioneuralgia"	1.1	7.1	05/01/2019
+12	Trivia	Back when dinosaurs existed, there used to be volcanoes that were erupting on the moon	3.9	5.9	08/10/2011
