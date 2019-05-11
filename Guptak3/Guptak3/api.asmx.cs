@@ -87,6 +87,7 @@ namespace WebAPI {
 			return ret;
 		}
 
+
 		public DataTable sqlExecDataTable(string sql) {
 			DataSet userDataset = new DataSet();
 			try {
@@ -141,10 +142,10 @@ namespace WebAPI {
 			parameters.Add(new SqlParameter(name, value));
 		}
 
-		#endregion
+        #endregion
 
-		#region ######################################################################################################################################################## Serializer
-		private enum serializeStyle {
+        #region ######################################################################################################################################################## Serializer
+        private enum serializeStyle {
 			GENERAL,
 			DATA_SET,
 			DATA_TABLE,
@@ -462,7 +463,7 @@ namespace WebAPI {
         // Methods
         #region ######################################################################################################################################################## Methods
 
-		        [WebMethod(Description = "Creates a new user.")]
+		[WebMethod(Description = "Creates a new user.")]
         public void createUser(string userName, string firstName, string lastName, Boolean student)
         {
             addParam("@UserName", userName);

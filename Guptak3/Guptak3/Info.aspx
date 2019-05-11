@@ -15,13 +15,13 @@
                 <form id="gameSearch">
                     <div class="form-group">
                         <label for="gameSearch">Name</label>
-                        <input type="text" class="form-control" id="gameSearch" placeholder="Search for a game ...">
+                        <input type="text" class="form-control" id="gameSearch" placeholder="Search for a fact ...">
                     </div>
                     <button type="button" class="btn btn-primary">Search</button>
                 </form>
             </div>
 
-            <div class="container" id="games">
+            <div class="container" id="facts">
             </div>
             <p class="text-center"><button  id="leftbtn" type="button" class="btn btn-link"><</button> Page <span id="pageCount">1</span> <button type="button"  id="rightbtn" class="btn btn-link">></button> </p>
 
@@ -40,7 +40,7 @@
                                         "<p class='list-group-item-text'><b>Info:</b><br />" +
                                         value.Content + "</p></a>";
                                 });
-                                $("#games").html(d);
+                                $("#facts").html(d);
                             }, function (response) {
                                 alert("Error...");
                                 console.log(response);

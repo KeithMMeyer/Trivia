@@ -15,8 +15,9 @@ namespace Guptak3.Account
         {
             var manager = Context.GetOwinContext().GetUserManager<ApplicationUserManager>();
             var signInManager = Context.GetOwinContext().Get<ApplicationSignInManager>();
-            var user = new ApplicationUser() { UserName = Email.Text, Email = Email.Text };
-            IdentityResult result = manager.Create(user, Password.Text);
+            var user = new ApplicationUser() { UserName = Username.Text, Email = Email.Text };
+            slaveFunc.Text = "<script type='text/javascript'>$(document).ready(function () {createUser();});</script>";
+        IdentityResult result = manager.Create(user, Password.Text);
             if (result.Succeeded)
             {
                 // For more information on how to enable account confirmation and password reset please visit https://go.microsoft.com/fwlink/?LinkID=320771
@@ -25,12 +26,17 @@ namespace Guptak3.Account
                 //manager.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
 
                 signInManager.SignIn( user, isPersistent: false, rememberBrowser: false);
-                IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+                //IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
             }
             else 
             {
                 ErrorMessage.Text = result.Errors.FirstOrDefault();
             }
         }
+        //protected void CreateUser_Click(object sender, EventArgs e)
+        //{
+
+
+        //}
     }
 }
