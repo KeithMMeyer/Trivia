@@ -122,6 +122,9 @@
         <h2>Quizzes</h2>
         <div class="container">
             <div class="row">
+            <p>Want to make your own Quiz? <a href="AddQuiz.aspx" class="btn btn-info"> Create New Quiz</a></p>
+                </div>
+            <div class="row">
                 <label for="quizName">Enter Quiz Name:</label>
                 <input type="text" id="quizName">
                 <button type="button" class="btn btn-primary" onclick=getQuiz()>Search For Quiz</button>

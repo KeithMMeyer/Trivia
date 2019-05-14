@@ -1,3 +1,6 @@
+﻿<%@ Page Title="View" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Info.aspx.cs" Inherits="Guptak3.Contact" %>
+
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 <!DOCTYPE html>
 <html>
 
@@ -137,3 +140,4 @@
 </body>
 
 </html>
+    </asp:Content>
