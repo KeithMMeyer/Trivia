@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SetUp.aspx.cs" Inherits="Guptak3.Account.Register" %>
+﻿<%@ Page Title="SetUp" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SetUp.aspx.cs" Inherits="Guptak3.Account.Register" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
@@ -56,18 +56,17 @@
             </div>
         </div>
 
-        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <asp:Button runat="server" ID="btnReg" Text="Create Account" CssClass="btn btn-default" />
-            </div>
+                <asp:Button runat="server" ID="btnCret" Text="Create Account" CssClass="btn btn-default" />
         </div>
-    </div>
     <script>
-                function createUser(username, firstname, lastname, student) {
+
+            function createUser() {
             service("createUser", "{userName:\"" + "<%: Context.User.Identity.GetUserName()%>" + "\", firstName:\"" + $("#MainContent_FirstName").val() + "\", lastName:\"" + $("#MainContent_LastName").val() + "\", student:" + false + "}",
                 function (response) {
                     //showInvoices(selectedVendor);
-                    window.location.replace("http://www.w3schools.com");
+                    alert("Account Created!");
+                    window.location.replace("../info.aspx");
                 }, function (response) {
                     alert("Error");
                     console.log(response);

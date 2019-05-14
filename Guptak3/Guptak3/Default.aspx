@@ -39,4 +39,8 @@
         </div>
     </div>
 
+    <script>
+        window.location.replace("../info.aspx");
+    </script>
+
 </asp:Content>
