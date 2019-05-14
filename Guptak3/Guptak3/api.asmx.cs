@@ -578,6 +578,15 @@ namespace WebAPI {
         }
 
         [WebMethod]
+        public void getQuestionByQuiz(string quizName)
+        {
+            addParam("@quizName", quizName);
+            send("spGetQuizQuestion", serializeStyle.DATA_TABLE);
+        }
+
+
+
+        [WebMethod]
         public void getQuestion(int questionId)
         {
             addParam("@questionId", questionId);

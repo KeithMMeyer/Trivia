@@ -404,3 +404,32 @@ GO
 --========================================================= Indexes 
 CREATE INDEX idxUsernames
 ON Users (Username)
+
+
+
+--=========================================================== Inserts
+
+INSERT INTO Quizzes(Name,	Date,	NumberOfQuestions)
+VALUES	('Trivia 1',	'05/11/2019',	13),
+		('Trivia 2',	'05/10/2019',	12)
+
+INSERT INTO Questions (VisibleId, QuizID,Content,CorrectAnswer,Incorrect1,Incorrect2,Incorrect3)                               
+VALUES (1,1,'The beaver is the national emblem of which country?','Canada','Australia','England', 'Japan'),
+(2,1,'In which movie did Humphrey Bogart play Charlie Allnut?','African Queen','Nigerian Queen','Hamlet', 'Merchant Of Venice'),
+(3,1,'Which singer?s real name is Stefani Joanne Angelina Germanotta?','Lady Gaga','Nicki Minaj','Cardi B', 'Ariana Grande'),
+(4,1,'How many players are there in a baseball team?','Nine','11','7','9'),
+(5,1,'Which TV character said, ?Live long and prosper?','Mr Spock from Star Trek','Apu', 'Mr. Burns', 'Homer Simpson')
+
+INSERT INTO Facts (VisibleId, [Type],	Content,	Longitude,	Latitude,	Date)
+VALUES
+(22,'Sports',	'A professional basketball game is 48 minutes long, not including breaks, timeouts, fouls, etc.',	1.2,	3.2,	'04/16/2018'),
+(23,'Trivia',	'The original formula for Mountain Dew was invented in 1940',	2.0,	6.9,	'06/06/2018'),
+(24,'Trivia',	'Camels are called "The ship of the desert"',	7.2,	1.3,	'09/12/2018'),
+(25,'History',	'The Great of Fire London started on Sunday, 2 September 1666 in a bakers shop',	3.7,	4.5,	'01/02/1998'),
+(26,'Video Games',	'Mario was named after the landlord of Nintendos first warehoue Mr. Mario Segale',	1.7,	2.5,	'02/19/2019'),
+(27,'Video Games',	'3,333,360 points i the max score you can get in Pac-Man',	9.4,	6.1,	'02/19/2018'),
+(28,'Video Games',	'Playstation 2 and Nintndo D are the best selling game consoles with about 155 million units each',	5.5,	5.5,	'04/02/2012'),
+(29,'Video Games',	'The highest number human can press a controller button in a second is 16 times',	6.1,	6.3,	'10/09/2015'),
+(30,'History',	'The last time the US Constitution was amended was in 1992 with the Twenty-seventh Amendment',	4.9,	3.5,	'11/09/2018'),
+(31,'Trivia',	'The scientific term for brain freeze is "sphenopalatine ganglioneuralgia"',	1.1,	7.1,	'05/01/2019'),
+(32,'Trivia',	'Back when dinosaurs existed, there used to be volcanoes that were erupting on the moon',	3.9,	5.9,	'08/10/2011')

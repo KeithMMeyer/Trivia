@@ -1,26 +1,21 @@
-QuestionID	VisibleId QuizID	Content	CorrectAnswer	Incorrect1	Incorrect2	Incorrect3                                
-1	1           1           The beaver is the national emblem of which country?                          Canada             		Australia      		England     	 Japan
-2	2           1           In which movie did Humphrey Bogart play Charlie Allnut?                      African Queen      		Nigerian Queen 		Hamlet     	 Merchant Of Venice  
-3       3           1           Which singer’s real name is Stefani Joanne Angelina Germanotta?              Lady Gaga          		Nicki Minaj    		Cardi B    	 Ariana Grande
-4       4           1           How many players are there in a baseball team?                               Nine               		11              	7         	 9
-5       5           1           Which TV character said, “Live long and prosper”?                            Mr Spock from Star Trek       Homer Simpson   	Apu       	 Mr. Burns
-6       6           1           Who was US president during World War I?                                     Woodrow Wilson                Barack Obama    	Donald Trump 	 George Washington
-7       7           1           What is the name of Batman’s butler?                                         Alfred                        Peter Parker    	John Cina   	 Jon Snow
-8       8           1           The average human body contains how many pints of blood?                     Nine                          Twelve          	Eleven      	 Nineteen
-9       9           1           Which US state is nearest to the old Soviet Union?                           Alaska                        Michigan        	Florida     	 Ohio
-10      10           1           In which city is Jim Morrison buried?                                        Paris                         Hongkong        	Detroit    	 New York
-11      11           1           Hg is the chemical symbol of which element?                                  Mercury                       Hydrogen        	Oxygen      	 Nitrogen
-12      12           1           The Pyrenees mountain range separates which two European countries?          France and Spain              Germany and Austria 	Greece and Spain Switzerland and Portugal
-13      13           1           Which movie features the song Ding Dong The Witch Is Dead?                   The Wizard of Oz              Batman                  Jungle Book      Avengers: Endgame
-14      14           2           In Fahrenheit, at what temperature does water freeze?                        32 degrees                    38 degrees              52 degrees       58 degrees
-15      15           2           What is Chandler’s last name in the sitcom Friends?                          Bing                          Ping                    Sting            Rose
-16      16           2           Which is the highest waterfall in the world?                                 Angel Falls                   Jog Falls               Niagara Falls    Victoria Falls                                                   
-17      17           2           The Statue of Liberty was given to the US by which country?                  France                        Spain                   Japan            Brazil
-18      18           2           Who was the leader of the wolves in The Jungle Book?                         Akala                         Mowgli                  Baloo            Shere Khan
-19      19           2           Which of the planets is closest to the sun?                                  Mercury                       venus                   Mars             Jupiter
-20      20           2           According to Greek mythology who was the first woman on earth?               Pandora                       Mary                    Jane             Aphodrite
-21      21           2           In Greek mythology, how many graces are there?                               Three                         five                    four             nine
-22      22           2           Which US city is known as the City of Brotherly Love?                        Philly                        New Orleans             Nashville        New York
-23      23           2           Which US state’s largest city is Baltimore?                                  Maryland                      Ohio                    Virginia         Florida
-24      24           2           In the sport of Judo, what color belt follows an orange belt?                Green                         yellow                  black            brown
-25      25           2           How many letters are there in the German alphabet?                           Thirty                        thrity-five             forty            fifty
+VisibleId, QuizID,Content,CorrectAnswer,Incorrect1,Incorrect2,Incorrect3                                
+1,1,The beaver is the national emblem of which country?,Canada             ,Australia      ,England     , Japan
+2,1,In which movie did Humphrey Bogart play Charlie Allnut?,African Queen      ,Nigerian Queen ,Hamlet     , Merchant Of Venice  
+3,1,Which singer?s real name is Stefani Joanne Angelina Germanotta?,Lady Gaga          ,Nicki Minaj    ,Cardi B    , Ariana Grande
+4,1,How many players are there in a baseball team?,Nine               ,11,7,9
+5,1,"Which TV character said, ?Live long and prosper??",Mr Spock from Star Trek    ,Apu       , Mr. Burns, Homer Simpson   
+6,1,Who was US president during World War I?,Woodrow Wilson,Donald Trump , George Washington,Barack Obama    
+7,1,What is the name of Batman?s butler?,Alfred,John Cina   , Jon Snow,Peter Parker
+8,1,The average human body contains how many pints of blood?,Nine,Eleven      , Nineteen,Twelve
+9,1,Which US state is nearest to the old Soviet Union?,Alaska,Florida     , Ohio,Michigan        
+10,1,In which city is Jim Morrison buried?,Paris,Detroit    , New York,Hongkong
+11,1,Hg is the chemical symbol of which element?,Mercury,Oxygen      , Nitrogen,Hydrogen
+12,1,The Pyrenees mountain range separates which two European countries?,France and Spain,Greece and Spain,Switzerland and Portugal,Germany and Austria
+13,1,Which movie features the song Ding Dong The Witch Is Dead?,The Wizard of Oz,Batman,Jungle Book,Avengers: Endgame
+14,2,"In Fahrenheit, at what temperature does water freeze?",32 degrees, 38 degrees,52 degrees,58 degrees
+15,2,What is Chandler?s last name in the sitcom Friends?,Bing,Ping,Sting,Rose
+16,2,Which is the highest waterfall in the world?,Angel Falls,Jog Falls,Niagara Falls,Victoria Falls
+17,2,The Statue of Liberty was given to the US by which country?,France,Spain,Japan,Brazil
+18,2,Who was the leader of the wolves in The Jungle Book?,Akala,Mowgli,Baloo, Shere Khan
+19,2,Which of the planets is closest to the sun?,Mercury,venus,Mars,Jupiter
+20,2,According to Greek mythology who was the first woman on earth?,Pandora,Mary,Jane,Aphodrite

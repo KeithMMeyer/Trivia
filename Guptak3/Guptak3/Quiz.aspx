@@ -46,7 +46,7 @@
         function getQuestion(name) {
             $("#quizContainer").hide();
             $("#questionContainer").show();
-            service("getQuestionByQuiz", "{quiz:" + JSON.stringify(name) + "}",
+            service("getQuestionByQuiz", "{quizName:" + JSON.stringify(name) + "}",
                 function (response) {
                     radioNames = [];
                     var d = "";
