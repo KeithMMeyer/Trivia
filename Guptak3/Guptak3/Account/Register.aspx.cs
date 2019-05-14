@@ -27,6 +27,8 @@ namespace Guptak3.Account
 
                 signInManager.SignIn( user, isPersistent: false, rememberBrowser: false);
                 //IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+
+                Server.Transfer("SetUp.aspx");
             }
             else 
             {
