@@ -1,4 +1,4 @@
-﻿<%@ Page Title="SetUp" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SetUp.aspx.cs" Inherits="Guptak3.Account.Register" %>
+﻿<%@ Page Title="SetUp" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SetUp.aspx.cs" Inherits="Guptak3.Account.SetUp" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
@@ -57,7 +57,7 @@
         </div>
 
             <div class="col-md-offset-2 col-md-10">
-                <asp:Button runat="server" ID="btnCret" Text="Create Account" CssClass="btn btn-default" />
+                <button id="btnCret" type="button" class="btn btn-default" onclick="createUser()"> Create Account</button>
         </div>
     <script>
 
